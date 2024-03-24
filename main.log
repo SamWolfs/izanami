@@ -1,0 +1,89 @@
+[1711264653] Log start
+[1711264653] Cmd: /home/besam/.local/bin/wizardcoder-python-34b-v1.0.Q5_K_M.llamafile -m wizardcoder-python-34b-v1.0.Q5_K_M.gguf -c 0 --prompt-cache /home/besam/dev/workspaces/yomi/izanami/main.go.cache --prompt-cache-all --silent-prompt --temp 0 -c 1024 -ngl 35 -r ``` -r 
+} -f /home/besam/dev/workspaces/yomi/izanami/main.go.prompt
+[1711264653] main: seed  = 1711264653
+[1711264653] main: llama backend init
+[1711264653] main: load the model and apply lora adapter, if any
+[1711264684] llama_model_loader: loaded meta data with 20 key-value pairs and 435 tensors from wizardcoder-python-34b-v1.0.Q5_K_M.gguf (version GGUF V2)
+[1711264684] llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+[1711264684] llama_model_loader: - kv   0:                       general.architecture str              = llama
+[1711264684] llama_model_loader: - kv   1:                               general.name str              = wizardlm_wizardcoder-python-34b-v1.0
+[1711264684] llama_model_loader: - kv   2:                       llama.context_length u32              = 16384
+[1711264684] llama_model_loader: - kv   3:                     llama.embedding_length u32              = 8192
+[1711264684] llama_model_loader: - kv   4:                          llama.block_count u32              = 48
+[1711264684] llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 22016
+[1711264684] llama_model_loader: - kv   6:                 llama.rope.dimension_count u32              = 128
+[1711264684] llama_model_loader: - kv   7:                 llama.attention.head_count u32              = 64
+[1711264684] llama_model_loader: - kv   8:              llama.attention.head_count_kv u32              = 8
+[1711264684] llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+[1711264684] llama_model_loader: - kv  10:                       llama.rope.freq_base f32              = 1000000.000000
+[1711264684] llama_model_loader: - kv  11:                          general.file_type u32              = 17
+[1711264684] llama_model_loader: - kv  12:                       tokenizer.ggml.model str              = llama
+[1711264684] llama_model_loader: - kv  13:                      tokenizer.ggml.tokens arr[str,32001]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+[1711264684] llama_model_loader: - kv  14:                      tokenizer.ggml.scores arr[f32,32001]   = [0.000000, 0.000000, 0.000000, 0.0000...
+[1711264684] llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,32001]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+[1711264684] llama_model_loader: - kv  16:                tokenizer.ggml.bos_token_id u32              = 1
+[1711264684] llama_model_loader: - kv  17:                tokenizer.ggml.eos_token_id u32              = 2
+[1711264684] llama_model_loader: - kv  18:            tokenizer.ggml.unknown_token_id u32              = 0
+[1711264684] llama_model_loader: - kv  19:               general.quantization_version u32              = 2
+[1711264684] llama_model_loader: - type  f32:   97 tensors
+[1711264684] llama_model_loader: - type q5_K:  289 tensors
+[1711264684] llama_model_loader: - type q6_K:   49 tensors
+[1711264684] llm_load_vocab: special tokens definition check successful ( 260/32001 ).
+[1711264684] llm_load_print_meta: format           = GGUF V2
+[1711264684] llm_load_print_meta: arch             = llama
+[1711264684] llm_load_print_meta: vocab type       = SPM
+[1711264684] llm_load_print_meta: n_vocab          = 32001
+[1711264684] llm_load_print_meta: n_merges         = 0
+[1711264684] llm_load_print_meta: n_ctx_train      = 16384
+[1711264684] llm_load_print_meta: n_embd           = 8192
+[1711264684] llm_load_print_meta: n_head           = 64
+[1711264684] llm_load_print_meta: n_head_kv        = 8
+[1711264684] llm_load_print_meta: n_layer          = 48
+[1711264684] llm_load_print_meta: n_rot            = 128
+[1711264684] llm_load_print_meta: n_embd_head_k    = 128
+[1711264684] llm_load_print_meta: n_embd_head_v    = 128
+[1711264684] llm_load_print_meta: n_gqa            = 8
+[1711264684] llm_load_print_meta: n_embd_k_gqa     = 1024
+[1711264684] llm_load_print_meta: n_embd_v_gqa     = 1024
+[1711264684] llm_load_print_meta: f_norm_eps       = 0.0e+00
+[1711264684] llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+[1711264684] llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+[1711264684] llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+[1711264684] llm_load_print_meta: n_ff             = 22016
+[1711264684] llm_load_print_meta: n_expert         = 0
+[1711264684] llm_load_print_meta: n_expert_used    = 0
+[1711264684] llm_load_print_meta: rope scaling     = linear
+[1711264684] llm_load_print_meta: freq_base_train  = 1000000.0
+[1711264684] llm_load_print_meta: freq_scale_train = 1
+[1711264684] llm_load_print_meta: n_yarn_orig_ctx  = 16384
+[1711264684] llm_load_print_meta: rope_finetuned   = unknown
+[1711264684] llm_load_print_meta: model type       = 34B
+[1711264684] llm_load_print_meta: model ftype      = Q5_K - Medium
+[1711264684] llm_load_print_meta: model params     = 33.74 B
+[1711264684] llm_load_print_meta: model size       = 22.20 GiB (5.65 BPW) 
+[1711264684] llm_load_print_meta: general.name     = wizardlm_wizardcoder-python-34b-v1.0
+[1711264684] llm_load_print_meta: BOS token        = 1 '<s>'
+[1711264684] llm_load_print_meta: EOS token        = 2 '</s>'
+[1711264684] llm_load_print_meta: UNK token        = 0 '<unk>'
+[1711264684] llm_load_print_meta: LF token         = 13 '<0x0A>'
+[1711264684] llm_load_tensors: ggml ctx size =    0.17 MiB
+[1711264684] llm_load_tensors: offloading 0 repeating layers to GPU
+[1711264684] llm_load_tensors: offloaded 0/49 layers to GPU
+[1711264684] llm_load_tensors:        CPU buffer size = 22733.75 MiB
+[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] .[1711264684] 
+[1711264684] llama_new_context_with_model: n_ctx      = 1024
+[1711264684] llama_new_context_with_model: freq_base  = 1000000.0
+[1711264684] llama_new_context_with_model: freq_scale = 1
+[1711264684] llama_kv_cache_init:        CPU KV buffer size =   192.00 MiB
+[1711264684] llama_new_context_with_model: KV self size  =  192.00 MiB, K (f16):   96.00 MiB, V (f16):   96.00 MiB
+[1711264684] llama_new_context_with_model:        CPU input buffer size   =    18.01 MiB
+[1711264684] llama_new_context_with_model:        CPU compute buffer size =   193.60 MiB
+[1711264684] llama_new_context_with_model: graph splits (measure): 1
+[1711264684] warming up the model with an empty run
+[1711264699] n_ctx: 1024
+[1711264699] 
+[1711264699] system_info: n_threads = 4 / 8 | AVX = 1 | AVX_VNNI = 0 | AVX2 = 1 | AVX512 = 0 | AVX512_VBMI = 0 | AVX512_VNNI = 0 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | SSSE3 = 1 | VSX = 0 | 
+[1711264699] main: attempting to load saved session from '/home/besam/dev/workspaces/yomi/izanami/main.go.cache'
+[1711264699] error loading session file: failed to open /home/besam/dev/workspaces/yomi/izanami/main.go.cache: I/O error
+[1711264699] main: error: failed to load session file '/home/besam/dev/workspaces/yomi/izanami/main.go.cache'

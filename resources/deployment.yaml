@@ -1,0 +1,36 @@
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: izanami
+  labels:
+    app: izanami
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: izanami
+  template:
+    metadata:
+      labels:
+        app: izanami
+    spec:
+      containers:
+      - name: izanami
+        securityContext:
+          allowPrivilegeEscalation: false
+        image: izanami:latest
+        envFrom:
+        - configMapRef:
+            name: izanami-env
+        readinessProbe:
+          grpc:
+            port: 41888
+          initialDelaySeconds: 10
+          timeoutSeconds: 5
+        livenessProbe:
+          grpc:
+            port: 41888
+          initialDelaySeconds: 10
+          timeoutSeconds: 5
